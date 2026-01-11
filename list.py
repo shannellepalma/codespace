@@ -1,5 +1,6 @@
 def show_menu():
-    print("\n===== TO-DO LIST MENU =====")
+    print("\n3
+    TO-DO LIST MENU =====")
     print("1. View tasks")
     print("2. Add task")
     print("3. Remove task")
