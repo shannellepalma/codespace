@@ -1,32 +1,15 @@
-#Input is not valid yet
-#WHILE input is not valid:
-#try to convert user input into a number
-#if conversion works:
-#mark input as valid
-#if conversion fails:
-#show error message
-#return the number
-
-while True:
-    def readNumber (text):
-        n=0
-        valid= False
-        while valid == False:
-            try:
-                n= float(input(text))
-                valid= True
-            except:
-                print("Invalid Entry")
-
-        return n
+def readNumber (text):
+    n=0
+    valid= False
+    while valid == False:
+        try:
+            n= float(input(text))
+            valid= True
+        except:
+            print("Invalid Entry")
+    return n
     
-    a= readNumber("Enter 1st no.:")
-    b= readNumber("Enter 2nd no.:")
-
-    print("1. Addition 2. Subtraction 3. Multiplication 4. Division")
-
-    while True:
-        def readChoice (text):
+def readChoice (text):
             c=0
             valid= False
             while valid == False:
@@ -37,9 +20,21 @@ while True:
                     else:
                         print("Invalid choice. Please enter a number between 1 and 4.")
                 except:
-                    print("Invalid Entry. Please enter a number between 1 and 4.")
-
+                    print("Invalid Entry.")
             return c
+while True:
+        a= readNumber("Enter 1st no.:")
+        b= readNumber("Enter 2nd no.:")
+
+        print("--------------------------")
+        print("Arithmetic Operations")
+        print("--------------------------")
+        print("1. [A]ddition")
+        print("2. [S]ubtraction" )
+        print("3. [M]ultiplication")
+        print("4. [D]ivision")
+        print("--------------------------")
+        
         c= readChoice("Enter your choice:") 
 
         if c == 1:
