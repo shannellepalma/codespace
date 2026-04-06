@@ -1,7 +1,8 @@
 def readNumber(text):
     while True:
         try:
-            return float(input(text))
+            value = float(input(text))
+            return value
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
